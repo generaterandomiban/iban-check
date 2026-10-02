@@ -1,0 +1,23 @@
+# The "files" field in package.json is the primary allow-list for the published package
+# (dist/, COUNTRY_DATA_SOURCES.md, plus README.md, LICENSE and package.json which npm
+# always includes). This file is a safety net in case "files" is ever removed.
+src/
+tests/
+scripts/
+coverage/
+.github/
+*.tgz
+*.log
+.env
+.env.*
+.npmrc
+*registry*.txt
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+eslint.config.js
+prettier.config.js
+.prettierignore
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md

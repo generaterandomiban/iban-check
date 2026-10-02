@@ -1,0 +1,80 @@
+{
+  "name": "iban-check",
+  "version": "0.1.0",
+  "description": "Validate and parse IBANs in JavaScript and TypeScript. Checks the MOD-97 checksum, country length and BBAN structure using the SWIFT IBAN Registry. No dependencies; works offline in Node.js and browsers.",
+  "keywords": [
+    "iban",
+    "iban validator",
+    "iban validation",
+    "iban checker",
+    "iban parser",
+    "iban checksum",
+    "mod97",
+    "iso 13616",
+    "bban",
+    "banking",
+    "finance",
+    "typescript",
+    "javascript"
+  ],
+  "license": "MIT",
+  "author": "GenerateRandomIBAN.com",
+  "homepage": "https://generaterandomiban.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generaterandomiban/iban-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/generaterandomiban/iban-check/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "COUNTRY_DATA_SOURCES.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:dist": "node scripts/smoke-test.mjs",
+    "lint": "eslint . && tsc --noEmit && prettier --check .",
+    "format": "prettier --write .",
+    "check:package": "publint --strict && attw --pack .",
+    "generate:countries": "node scripts/generate-countries.mjs",
+    "prepublishOnly": "npm run lint && npm test && npm run build && npm run test:dist && publint --strict"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.11.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "publint": "^0.3.25",
+    "tsup": "^8.5.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^4.1.11"
+  }
+}

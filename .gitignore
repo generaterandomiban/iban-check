@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Packed tarballs (npm pack)
+*.tgz
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Logs
+*.log
+npm-debug.log*
+
+# Raw SWIFT registry downloads (contain personal contact data, see COUNTRY_DATA_SOURCES.md)
+*registry*.txt
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
