@@ -1,6 +1,6 @@
 {
   "name": "iban-check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate and parse IBANs in JavaScript and TypeScript. Checks the MOD-97 checksum, country length and BBAN structure using the SWIFT IBAN Registry. No dependencies; works offline in Node.js and browsers.",
   "keywords": [
     "iban",

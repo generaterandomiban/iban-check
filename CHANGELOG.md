@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## Unreleased
 
+## 0.1.1
+
+Documentation only, no code changes.
+
+- Replace the "Online IBAN Validator" README section with an author note about GenerateRandomIBAN.com.
+- Add the author URL to `package.json`.
+
 ## 0.1.0
 
 Initial release.

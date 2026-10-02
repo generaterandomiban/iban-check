@@ -355,7 +355,7 @@ Without a bundler, using a native ES module from a CDN:
 
 ```html
 <script type="module">
-  import { validateIBAN } from "https://cdn.jsdelivr.net/npm/iban-check@0.1.0/+esm";
+  import { validateIBAN } from "https://cdn.jsdelivr.net/npm/iban-check@0.1/+esm";
 
   console.log(validateIBAN("NL91 ABNA 0417 1643 00").valid); // true
 </script>
