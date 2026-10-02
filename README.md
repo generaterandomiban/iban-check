@@ -398,10 +398,6 @@ IBANs are personal financial data. iban-check processes them locally, in your pr
 
 The country data ships inside the package. To verify, search the source: it has no `fetch`, `XMLHttpRequest`, `http` or `https` calls.
 
-## Online IBAN Validator
-
-Try the online IBAN Validator: [generaterandomiban.com](https://generaterandomiban.com)
-
 ## Contributing
 
 Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and follow the [Code of Conduct](./CODE_OF_CONDUCT.md). To report a security vulnerability, see [SECURITY.md](./SECURITY.md) and do not open a public issue.
@@ -454,3 +450,7 @@ The package is not scoped. If you ever publish it under a scope (e.g. `@your-org
 ## License
 
 [MIT](./LICENSE)
+
+---
+
+iban-check is maintained by [GenerateRandomIBAN.com](https://generaterandomiban.com/), a free generator of valid test IBANs for 46 countries. It pairs well with this library when you need sample IBANs for forms and test suites.

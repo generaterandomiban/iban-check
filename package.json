@@ -18,8 +18,11 @@
     "javascript"
   ],
   "license": "MIT",
-  "author": "GenerateRandomIBAN.com",
-  "homepage": "https://generaterandomiban.com",
+  "author": {
+    "name": "GenerateRandomIBAN.com",
+    "url": "https://generaterandomiban.com/"
+  },
+  "homepage": "https://generaterandomiban.com/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/generaterandomiban/iban-check.git"
